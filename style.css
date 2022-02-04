@@ -1,0 +1,307 @@
+/*OVERALL PAGE STYLE*/
+html, body {
+    height: 100%;
+    margin: 0pt;
+    background-image:url("bg.jpg");
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+   
+} 
+
+/*FONTS*/
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('fonts/josefinsans-regular-webfont.woff2') format('woff2'),
+         url('fonts/josefinsans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Quattrocento Sans';
+    src: url('fonts/quattrocentosans-regular-webfont.woff2') format('woff2'),
+         url('fonts/quattrocentosans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('fonts/quicksand-regular-webfont.woff2') format('woff2'),
+         url('fonts/quicksand-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*PLAIN TEXT SETTINGS*/
+h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 45px;
+}
+
+h2#mthexp{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+h2#mthexpval{
+    font-size: 35px;
+}
+
+p{
+    font-weight: bolder;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 35px;  
+}
+
+p#instruct{
+    font-size: 30px;  
+}
+
+/*INSERT NEW ENTRY*/
+.add_btn {
+    background-color: pink;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    display: block;
+    font-size: 60px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.buttonRow{
+    padding-bottom: 15px;
+}
+
+
+/*MIDDLE SECTION OF WEBPAGE*/
+.welcome .resulttable {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    
+}
+.Calculator {
+    overflow: auto;
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+/*TABLE STYLES*/
+#table{
+    border-collapse: collapse;
+}
+th{
+    background-color: #dab3ff;
+}
+table, th, tr, td {
+    border: 1px solid black;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+/*DISPLAY MONTH DROPDOWN*/
+#monthexp{
+    border: 1px solid black;
+    width: 50%;
+    border-radius: 11px;
+    font-size: 28px;
+    padding: 7px;
+    margin-left: 24px;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+/*GRADIENT BUTTON*/
+.month {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    min-width: 15px;
+  }
+
+.btn {
+    flex: 1 1 auto;
+    margin: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    border-color: transparent;
+   }
+
+.btn:hover {
+    background-position: right center; /* change the direction of the change here */
+  }
+
+#mthBtn {
+    display: inline-block;
+    width: 36.5%;
+    padding: 5px;
+    font-size: 28px;
+    background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+    
+}
+
+#saveBtn {
+    display: inline-block;
+    width: 30%;
+    padding: 5px;
+    margin: 0 auto;
+    background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+    
+}
+#updateBtn {
+    display: inline-block;
+    width: 30%;
+    padding: 5px;
+    margin: 0 auto;
+    background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+    
+}
+
+/*FORM*/
+.containerform{
+    text-align: left;
+    margin:0 auto;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/*EDIT, DELETE BUTTON STYLES*/
+#edit,#del{
+	font-size: 14px;
+	padding: 13px 17px;
+	border: none;
+    width: 100%;
+    background-color: #f8d2ed;
+    font-family: 'Quattrocento Sans', sans-serif;
+    border-radius: 12px;
+}
+
+tr.edit, td.edit, tr.del,td.del{
+    border: none;
+}
+
+/*Modal Form*/
+/* Bordered form */
+
+#loginmodal form {
+    border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+#loginmodal input[type=text], #loginmodal input[type=number], #loginmodal input[type=date]{
+    margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 0.5px solid black;
+}
+
+#loginmodal input[type=number]{
+    width: 60%;
+}
+
+select#category {
+    border: 0.5px solid black;
+}
+
+/* Set a style for all buttons */
+#loginmodal button {
+    background-color: #FFB6C1;
+    color: white;
+    padding: 14px 20px;
+    margin:8px 0 ;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+	margin-left: 100px;
+}
+
+/* Add a hover effect for buttons */
+#loginmodal button:hover {
+    opacity: 0.8;
+}
+
+/* Add padding to containers */
+#loginmodal .container {
+    padding: 16px;
+}
+
+/* The Modal (background) */
+#loginmodal.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+#loginmodal .modal-content {
+    background-color:seashell;
+    margin: 5px auto; /* 15% from the top and centered */
+    width: 70%; /* Could be more or less, depending on screen size */
+	padding: 15px;
+}
+
+/* The Close Button */
+#loginmodal .close {
+    /* Position it in the top right corner outside of the modal */
+        position: 0 auto;
+        padding-top: 5px;
+        padding-left: 314px;
+        color: #000;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+/* Close button on hover */
+#loginmodal .close:hover,
+#loginmodal .close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+#loginmodal .animate {
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+  /* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    #loginmodal span.psw {
+        display: block;
+        float: none;
+    }
+    #loginmodal .cancelbtn {
+        width: 100%;
+    }
+}
